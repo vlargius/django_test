@@ -1,1 +1,5 @@
 mysite/*.pyc
+mysite/polls/migrations/*
+mysite/mysite/migrations/*
+mysite/polls/__pycache__/*
+mysite/mysite/__pycache__/*

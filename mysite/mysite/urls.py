@@ -17,7 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import include
 
+from polls import views
+
 urlpatterns = [
+    path('', views.IndexView.as_view(), name='index'),
+    path('echo/', views.echo, name='echo'),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
 ]

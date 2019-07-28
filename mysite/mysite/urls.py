@@ -24,4 +24,5 @@ urlpatterns = [
     path('echo/', views.echo, name='echo'),
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),
+    path('marks/', include('marks.urls')),
 ]

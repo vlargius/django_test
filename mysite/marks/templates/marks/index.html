@@ -1,0 +1,12 @@
+{% load static %}
+<h1>List of marks</h1>
+
+{% if marks_list %}
+    <ul>
+    {% for mark in marks_list %}
+        <li><a>{{ mark.note }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No marks are available.</p>
+{% endif %}

@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'marks.apps.MarksConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,9 +83,7 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASS', ''),
         'HOST': 'localhost',
         'PORT': '5432',
-    }
-    # 'PORT': '5432',
-    # # }
+    },
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': os.path.join(BASE_DIR, 'my_site_db.sqlite3'),
